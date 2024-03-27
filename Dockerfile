@@ -8,6 +8,7 @@ COPY package*.json ./
 
 # Install application dependencies
 RUN npm install --force
+RUN npm audit fix --force
 
 # Copy the rest of your application code to the container
 COPY . ./
