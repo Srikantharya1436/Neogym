@@ -7,7 +7,6 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install application dependencies
-RUN npm audit fix --force
 RUN npm install --force
 
 # Copy the rest of your application code to the container
